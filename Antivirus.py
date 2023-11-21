@@ -22,7 +22,6 @@ def connect_to_database():
             user="postgres",
             password="test123"
         )
-        connection.autocommit = True
         print("Connected to the database")
         return connection
     except Error as e:
